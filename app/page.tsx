@@ -1,3 +1,5 @@
+import HeroHUD from "@/components/dom/HeroHUD";
+
 export default function Home() {
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-[#0f0f0f]">
@@ -5,13 +7,9 @@ export default function Home() {
 
       <main
         id="dom-ui"
-        className="pointer-events-none absolute inset-0 z-10 flex items-start justify-between p-6"
+        className="pointer-events-none absolute inset-0 z-10"
       >
-        <section className="pointer-events-auto">
-          <h1 className="text-sm uppercase tracking-[0.2em] text-zinc-300">
-            F1 Portfolio Scaffold
-          </h1>
-        </section>
+        <HeroHUD />
       </main>
     </div>
   );
